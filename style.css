@@ -141,7 +141,10 @@ body {
 
     .card {
         flex-direction: row;
-        width: 50%;
+        justify-self: space-between;
+        align-items: stretch;
+        width: 40%;
+        grid-column: 20px;
 
     }
 
@@ -149,15 +152,16 @@ body {
         width: 50%;
         height: 100%;
         display: flex;
+        justify-content: flex-start;
         align-items: stretch;
+
     }
 
     .desktop-image {
         display: inline;
         border-radius: 10px 0 0 10px;
         width: 100%;
-        height: 500px;
-
+        height: 450px;
     }
 
     .mobile-image {
@@ -165,9 +169,11 @@ body {
     }
 
     .text_div {
-        padding: 30px 40px;
-        row-gap: 25px;
+        width: 60%;
+        padding: 30px;
+        row-gap: 15px;
         width: 50%;
+
     }
 
     .Perfume {
@@ -183,7 +189,7 @@ body {
     }
 
     .corrent-price {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .btn {
