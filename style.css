@@ -1,0 +1,196 @@
+/* style.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* roots */
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+h1 {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+    font-size: 36px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+}
+
+/* coustom styles */
+body {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--White);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.desktop-image {
+    display: none;
+}
+
+.mobile-image {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.text_div {
+    padding: 25px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.Perfume {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    font-size: 14px;
+    opacity: .8;
+}
+
+.description {
+    line-height: 1.5rem;
+    font-weight: 600;
+    opacity: .8;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.price del {
+
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    opacity: .8;
+}
+
+.corrent-price {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--dark-cyan);
+}
+
+.btn {
+    background-color: var(--dark-cyan);
+    color: var(--White);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.cart {
+    width: 20px;
+    height: 20px;
+}
+
+/* Desctop View */
+
+@media (min-width: 1250px) {
+    h1 {
+        line-height: 2.3rem;
+    }
+
+    .card {
+        flex-direction: row;
+        width: 50%;
+
+    }
+
+    .img_div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .desktop-image {
+        display: inline;
+        border-radius: 10px 0 0 10px;
+        width: 100%;
+        height: 500px;
+
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .text_div {
+        padding: 30px 40px;
+        row-gap: 25px;
+        width: 50%;
+    }
+
+    .Perfume {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .price del {
+        font-size: 14px;
+    }
+
+    .corrent-price {
+        font-size: 48px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btn:hover {
+        background-color: hsl(158, 36%, 27%);
+    }
+}
